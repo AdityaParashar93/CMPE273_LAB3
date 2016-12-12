@@ -1,0 +1,101 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="/Users/ankilshah/Documents/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/LoginApp/WEB-INF/attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="Products" provider="java:RPC">
+  <ns2:operation name="products" qname="ns1:products" returnQName="productsReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://login.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter name="query" type="xsd:string"/>
+  </ns2:operation>
+  <ns1:parameter name="allowedMethods" value="products"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Products"/>
+  <ns1:parameter name="className" value="com.login.Products"/>
+  <ns1:parameter name="wsdlServicePort" value="Products"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://login.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ProductsService"/>
+ </ns1:service>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="Validate" provider="java:RPC">
+  <ns1:operation name="validate" qname="ns2:validate" returnQName="validateReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://login.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter name="username" type="xsd:string"/>
+   <ns1:parameter name="password" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="validate"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Validate"/>
+  <ns1:parameter name="className" value="com.login.Validate"/>
+  <ns1:parameter name="wsdlServicePort" value="Validate"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://login.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ValidateService"/>
+ </ns1:service>
+ <ns1:service name="Calculator" provider="java:RPC">
+  <ns1:operation name="calculate" qname="ns3:calculate" returnQName="calculateReturn" returnType="xsd:int" soapAction="" xmlns:ns3="http://login.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter name="test" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="calculate"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Calculator"/>
+  <ns1:parameter name="className" value="com.login.Calculator"/>
+  <ns1:parameter name="wsdlServicePort" value="Calculator"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://login.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="CalculatorService"/>
+ </ns1:service>
+ <ns1:service name="Manipulate" provider="java:RPC">
+  <ns1:operation name="manipulate" qname="ns4:manipulate" returnQName="manipulateReturn" returnType="xsd:int" soapAction="" xmlns:ns4="http://login.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter name="query" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="manipulate"/>
+  <ns1:parameter name="wsdlPortType" value="Manipulate"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlServicePort" value="Manipulate"/>
+  <ns1:parameter name="className" value="com.login.Manipulate"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://login.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ManipulateService"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

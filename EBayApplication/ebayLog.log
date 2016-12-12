@@ -1,0 +1,271 @@
+{"level":"info","message":"Basic:: sagar@sjsu.edu\tsagar","timestamp":"2016-10-15T20:40:17.057Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='sagar@sjsu.edu' and cx_password='sagar'","timestamp":"2016-10-15T20:40:17.098Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='sagar@sjsu.edu' and cx_password='sagar'","timestamp":"2016-10-15T20:40:17.181Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-10-15T20:40:30.221Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('sagar@sjsu.edu','1');","timestamp":"2016-10-15T20:40:32.977Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('sagar@sjsu.edu','3');","timestamp":"2016-10-15T20:40:33.953Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('sagar@sjsu.edu','5');","timestamp":"2016-10-15T20:40:35.155Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='sagar@sjsu.edu' );","timestamp":"2016-10-15T20:40:37.502Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='sagar@sjsu.edu' );","timestamp":"2016-10-15T20:40:39.465Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='sagar@sjsu.edu';","timestamp":"2016-10-15T20:40:39.489Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('sagar@sjsu.edu',450);","timestamp":"2016-10-15T20:40:39.536Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='sagar@sjsu.edu';","timestamp":"2016-10-15T20:40:50.956Z"}
+{"level":"info","message":"Query:: insert into products (product_name,product_seller,product_value,product_inventory,product_desc,product_condi,product_category) values ('Sony Laptop','sagar@sjsu.edu',350,1,'Good','old_nb','laptop');","timestamp":"2016-10-15T20:41:39.686Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-10-15T20:41:48.914Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='sagar@sjsu.edu';","timestamp":"2016-10-15T20:41:59.160Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='sagar@sjsu.edu';","timestamp":"2016-10-15T20:42:01.418Z"}
+{"level":"info","message":"Basic:: durvesh.pilankar@sjsu.edu\tdurvesh","timestamp":"2016-10-15T21:30:15.612Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='durvesh.pilankar@sjsu.edu' and cx_password='durvesh'","timestamp":"2016-10-15T21:30:15.616Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='durvesh.pilankar@sjsu.edu' and cx_password='durvesh'","timestamp":"2016-10-15T21:30:15.621Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='Ebay';","timestamp":"2016-10-15T21:30:37.268Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-10-15T21:30:53.240Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-10-15T21:30:58.620Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:00.202Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:01.435Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:02.294Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:03.379Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:04.323Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:08.758Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:08.946Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:10.627Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:10.827Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:11.861Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:12.057Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:13.317Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:13.504Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('durvesh.pilankar@sjsu.edu','50');","timestamp":"2016-10-15T21:31:15.368Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('durvesh.pilankar@sjsu.edu','48');","timestamp":"2016-10-15T21:31:16.596Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('durvesh.pilankar@sjsu.edu','46');","timestamp":"2016-10-15T21:31:17.843Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:20.360Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-10-15T21:31:20.527Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('durvesh.pilankar@sjsu.edu','7');","timestamp":"2016-10-15T21:31:22.424Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('durvesh.pilankar@sjsu.edu','9');","timestamp":"2016-10-15T21:31:23.835Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='durvesh.pilankar@sjsu.edu' );","timestamp":"2016-10-15T21:31:25.263Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='durvesh.pilankar@sjsu.edu' );","timestamp":"2016-10-15T21:31:29.091Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='durvesh.pilankar@sjsu.edu';","timestamp":"2016-10-15T21:31:29.119Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('durvesh.pilankar@sjsu.edu',190);","timestamp":"2016-10-15T21:31:29.154Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='durvesh.pilankar@sjsu.edu';","timestamp":"2016-10-15T21:31:36.905Z"}
+{"level":"info","message":"Query:: insert into products (product_name,product_seller,product_value,product_inventory,product_desc,product_condi,product_category) values ('Tanmay','durvesh.pilankar@sjsu.edu',99999,1,'Faltu','old_nb','media');","timestamp":"2016-10-15T21:33:11.916Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='durvesh.pilankar@sjsu.edu';","timestamp":"2016-10-15T21:33:24.298Z"}
+{"level":"info","message":"Basic:: jay@sjsu.edu\tjay","timestamp":"2016-10-15T21:33:59.080Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='jay@sjsu.edu' and cx_password='jay'","timestamp":"2016-10-15T21:33:59.080Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='jay@sjsu.edu' and cx_password='jay'","timestamp":"2016-10-15T21:33:59.081Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='jay@sjsu.edu';","timestamp":"2016-10-15T21:34:05.158Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-10-15T21:34:14.740Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('jay@sjsu.edu','60');","timestamp":"2016-10-15T21:34:17.306Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='jay@sjsu.edu' );","timestamp":"2016-10-15T21:34:18.888Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='jay@sjsu.edu' );","timestamp":"2016-10-15T21:34:20.632Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='jay@sjsu.edu';","timestamp":"2016-10-15T21:34:20.719Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('jay@sjsu.edu',99999);","timestamp":"2016-10-15T21:34:20.752Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='jay@sjsu.edu';","timestamp":"2016-10-15T21:34:29.367Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-10-15T21:35:21.267Z"}
+{"level":"info","message":"Basic:: aditya@sjsu.edu\t$2a$10$tmHTIdo2UAKcsiCunjjGXuADLrqb499piLL.Ku/Dwco7Z6PT2YJni","timestamp":"2016-10-16T03:05:02.887Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='aditya@sjsu.edu' and cx_password='$2a$10$tmHTIdo2UAKcsiCunjjGXuADLrqb499piLL.Ku/Dwco7Z6PT2YJni'","timestamp":"2016-10-16T03:05:02.888Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:05:02.898Z"}
+{"level":"info","message":"Basic:: root@ebay.com\t$2a$10$wMBOt7A0JT080kdW.oMvF.KJlncKHuNZqm8nCHf8AkaWyiPypZvKi","timestamp":"2016-10-16T03:05:45.623Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com' and cx_password='$2a$10$wMBOt7A0JT080kdW.oMvF.KJlncKHuNZqm8nCHf8AkaWyiPypZvKi'","timestamp":"2016-10-16T03:05:45.623Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:05:45.624Z"}
+{"level":"info","message":"Basic:: root@ebay.com\t$2a$10$t5JtJbKERM5390.EWWOADeysAqpYMjMz.CR.74nuiAhYjm2VTGkoG","timestamp":"2016-10-16T03:06:47.746Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com' and cx_password='$2a$10$t5JtJbKERM5390.EWWOADeysAqpYMjMz.CR.74nuiAhYjm2VTGkoG'","timestamp":"2016-10-16T03:06:47.751Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:06:47.752Z"}
+{"level":"info","message":"Basic:: root@ebay.com\t$2a$10$Lfe3C.O1sxm0dOyxo0H3ueFwYeEeyaC2u0AZ3RRlp4msh3lfKhs9m","timestamp":"2016-10-16T03:08:04.167Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com' and cx_password='$2a$10$Lfe3C.O1sxm0dOyxo0H3ueFwYeEeyaC2u0AZ3RRlp4msh3lfKhs9m'","timestamp":"2016-10-16T03:08:04.178Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:08:04.179Z"}
+{"level":"info","message":"Basic:: root@ebay.com\t$2a$10$z5FC3ZPoNZQvr3SsnI/CJ.c2T5xAP5YfYb4wlqfC8z2ohtofkk0sa","timestamp":"2016-10-16T03:09:12.919Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com' and cx_password='$2a$10$z5FC3ZPoNZQvr3SsnI/CJ.c2T5xAP5YfYb4wlqfC8z2ohtofkk0sa'","timestamp":"2016-10-16T03:09:12.919Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:09:12.920Z"}
+{"level":"info","message":"Basic:: root@sjsu.edu\troot","timestamp":"2016-10-16T03:15:05.235Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@sjsu.edu'","timestamp":"2016-10-16T03:15:05.236Z"}
+{"level":"error","message":"Error:: null","timestamp":"2016-10-16T03:15:05.258Z"}
+{"level":"info","message":"Basic:: root@ebay.com\troot","timestamp":"2016-10-16T04:43:40.623Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T04:43:40.623Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T04:43:40.876Z"}
+{"level":"info","message":"Basic:: jay@sjsu.edu\tjay","timestamp":"2016-10-16T04:52:02.365Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='jay@sjsu.edu'","timestamp":"2016-10-16T04:52:02.366Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='jay@sjsu.edu'","timestamp":"2016-10-16T04:52:02.599Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='jay@sjsu.edu';","timestamp":"2016-10-16T04:52:07.955Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-10-16T04:52:20.322Z"}
+{"level":"info","message":"Basic:: sagar@sjsu.edu\tsagar","timestamp":"2016-10-16T04:52:37.776Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='sagar@sjsu.edu'","timestamp":"2016-10-16T04:52:37.777Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='sagar@sjsu.edu'","timestamp":"2016-10-16T04:52:38.016Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='sagar@sjsu.edu';","timestamp":"2016-10-16T04:52:42.308Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-10-16T04:53:06.560Z"}
+{"level":"info","message":"Basic:: root@ebay.com\troot","timestamp":"2016-10-16T06:16:29.660Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T06:16:29.660Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T06:16:29.886Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-10-16T06:16:42.022Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('root@ebay.com','1');","timestamp":"2016-10-16T06:16:44.253Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('root@ebay.com','3');","timestamp":"2016-10-16T06:16:45.474Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('root@ebay.com','5');","timestamp":"2016-10-16T06:16:46.586Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='root@ebay.com' );","timestamp":"2016-10-16T06:16:47.859Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='root@ebay.com' );","timestamp":"2016-10-16T06:16:51.644Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='root@ebay.com';","timestamp":"2016-10-16T06:16:51.736Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('root@ebay.com',450);","timestamp":"2016-10-16T06:16:51.779Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:18:47.042Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:18:47.042Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:18:48.869Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:18:48.869Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:18:57.569Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:18:57.572Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmin","timestamp":"2016-10-16T06:19:12.227Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:19:12.230Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:19:12.470Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com';","timestamp":"2016-10-16T06:19:23.055Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-10-16T06:19:40.516Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:20:47.040Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:20:47.044Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:20:48.871Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:20:48.873Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:22:47.044Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:22:47.052Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmon","timestamp":"2016-10-16T06:22:48.874Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-16T06:22:48.877Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com';","timestamp":"2016-10-16T06:27:29.271Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='';","timestamp":"2016-10-16T06:27:56.403Z"}
+{"level":"info","message":"Basic:: root@ebay.com\troot","timestamp":"2016-10-16T23:27:02.890Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T23:27:02.891Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='root@ebay.com'","timestamp":"2016-10-16T23:27:03.151Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='root@ebay.com';","timestamp":"2016-10-16T23:27:07.416Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='root@ebay.com';","timestamp":"2016-10-16T23:27:18.405Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-10-16T23:27:22.697Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmin","timestamp":"2016-10-17T03:39:45.902Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T03:39:45.903Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T03:39:46.161Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmin","timestamp":"2016-10-17T03:43:00.657Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T03:43:00.657Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T03:43:00.918Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-10-17T03:44:07.293Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-10-17T03:44:36.998Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-10-17T03:44:51.761Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-10-17T03:45:00.690Z"}
+{"level":"info","message":"Query:: insert into products (product_name,product_seller,product_value,product_inventory,product_desc,product_condi,product_category) values ('Ebay','admin@ebay.com',1,1,'Hehe','old_nb','electronics');","timestamp":"2016-10-17T03:45:58.885Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-10-17T03:52:31.406Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-10-17T03:53:11.285Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','7');","timestamp":"2016-10-17T03:53:13.266Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','9');","timestamp":"2016-10-17T03:53:14.839Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-10-17T03:53:16.240Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-10-17T03:53:32.933Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('admin@ebay.com',100);","timestamp":"2016-10-17T03:53:33.011Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com';","timestamp":"2016-10-17T03:53:33.034Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmin","timestamp":"2016-10-17T04:05:16.589Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T04:05:16.590Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-10-17T04:05:16.835Z"}
+{"level":"info","message":"Basic:: admin@ebay.com\tadmin","timestamp":"2016-12-11T05:33:01.982Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-12-11T05:33:01.983Z"}
+{"level":"info","message":"Query:: select * from userinfo where cx_email='admin@ebay.com'","timestamp":"2016-12-11T05:33:02.295Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-12-11T05:33:09.953Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-11T05:33:13.105Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='undefined';","timestamp":"2016-12-11T22:51:44.004Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-12-11T22:53:50.206Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-11T22:53:53.403Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:01.028Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:05.123Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:07.223Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:08.517Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:09.444Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:10.374Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:11.257Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:13.951Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:15.332Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:16.466Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:38.014Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:40.214Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:41.804Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:42.633Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:44.097Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:44.924Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:45.722Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:46.411Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-11T23:29:47.156Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:14.290Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:16.524Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:17.454Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:18.146Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:18.892Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:19.642Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:20.526Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:21.186Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:21.792Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-12-11T23:38:22.465Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-12-11T23:38:31.291Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-11T23:38:35.719Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-11T23:41:48.129Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:51.525Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:52.612Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:53.216Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:53.997Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:54.524Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:55.053Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:55.576Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:56.109Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:56.865Z"}
+{"level":"info","message":"Query:: select * from products where product_category='media' and product_seller='Ebay'","timestamp":"2016-12-11T23:41:57.827Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:44:12.744Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:48:59.076Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','6');","timestamp":"2016-12-11T23:49:01.232Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','7');","timestamp":"2016-12-11T23:49:06.557Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','8');","timestamp":"2016-12-11T23:49:07.479Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','9');","timestamp":"2016-12-11T23:49:08.713Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','10');","timestamp":"2016-12-11T23:49:09.593Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-11T23:49:11.808Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com' and product_id=6;","timestamp":"2016-12-11T23:49:14.697Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com' and product_id=7;","timestamp":"2016-12-11T23:49:15.480Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com' and product_id=8;","timestamp":"2016-12-11T23:49:16.592Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-11T23:49:18.046Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-12-11T23:53:28.648Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-11T23:53:32.982Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:40.216Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:42.136Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:42.888Z"}
+{"level":"info","message":"Query:: select * from products where product_category='kitchen' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:43.463Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:44.638Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:45.261Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:45.821Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-11T23:53:46.316Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-11T23:53:48.768Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-12-12T00:16:51.417Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-12T00:16:57.557Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:02.867Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:04.065Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:04.791Z"}
+{"level":"info","message":"Query:: select * from products where product_category='mobile' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:06.752Z"}
+{"level":"info","message":"Query:: select * from products where product_category='laptop' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:07.537Z"}
+{"level":"info","message":"Query:: select * from products where product_category='garden' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:08.214Z"}
+{"level":"info","message":"Query:: select * from products where product_category='home' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:08.777Z"}
+{"level":"info","message":"Query:: select * from products where product_category='living' and product_seller='Ebay'","timestamp":"2016-12-12T00:17:09.436Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','41');","timestamp":"2016-12-12T00:17:12.454Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','42');","timestamp":"2016-12-12T00:17:13.024Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-12T00:17:13.940Z"}
+{"level":"info","message":"Query:: delete from cart where cx_email='admin@ebay.com';","timestamp":"2016-12-12T00:17:45.609Z"}
+{"level":"info","message":"Query:: insert into orders (cx_email,order_total) values ('admin@ebay.com',160);","timestamp":"2016-12-12T00:17:45.641Z"}
+{"level":"info","message":"Query:: SELECT * FROM orders WHERE cx_email='admin@ebay.com';","timestamp":"2016-12-12T00:17:55.249Z"}
+{"level":"info","message":"Query:: select * from products where product_seller='admin@ebay.com';","timestamp":"2016-12-12T00:29:56.729Z"}
+{"level":"info","message":"Query:: select * from products where product_condi='old_nb';","timestamp":"2016-12-12T00:30:00.200Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-12T00:30:10.023Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','6');","timestamp":"2016-12-12T00:30:11.859Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','7');","timestamp":"2016-12-12T00:30:12.785Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-12T00:30:14.121Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-12T00:30:19.786Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-12T00:35:02.116Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','12');","timestamp":"2016-12-12T00:35:03.965Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','13');","timestamp":"2016-12-12T00:35:04.733Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','14');","timestamp":"2016-12-12T00:35:05.633Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('admin@ebay.com','11');","timestamp":"2016-12-12T00:35:08.100Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='admin@ebay.com' );","timestamp":"2016-12-12T00:35:09.667Z"}
+{"level":"info","message":"Query:: select * from products where product_category='electronics' and product_seller='Ebay'","timestamp":"2016-12-12T00:37:38.580Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','2');","timestamp":"2016-12-12T00:37:44.641Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','4');","timestamp":"2016-12-12T00:37:47.439Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:37:49.406Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:37:52.172Z"}
+{"level":"info","message":"Query:: select * from products where product_category='clothes' and product_seller='Ebay'","timestamp":"2016-12-12T00:40:57.103Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','6');","timestamp":"2016-12-12T00:40:58.858Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','7');","timestamp":"2016-12-12T00:40:59.814Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','8');","timestamp":"2016-12-12T00:41:00.580Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','9');","timestamp":"2016-12-12T00:41:01.269Z"}
+{"level":"info","message":"Query:: insert into cart (cx_email,product_id) values ('','10');","timestamp":"2016-12-12T00:41:01.970Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:41:03.174Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:41:16.879Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:41:50.985Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:41:51.016Z"}
+{"level":"info","message":"Query:: select * from products where product_category='sports' and product_seller='Ebay'","timestamp":"2016-12-12T00:41:59.636Z"}
+{"level":"info","message":"Query:: SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart WHERE cx_email='' );","timestamp":"2016-12-12T00:42:01.749Z"}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://login.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://login.com" xmlns:intf="http://login.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="manipulateRequest">
+
+      <wsdl:part name="query" type="xsd:string"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="manipulateResponse">
+
+      <wsdl:part name="manipulateReturn" type="xsd:int"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Manipulate">
+
+      <wsdl:operation name="manipulate" parameterOrder="query">
+
+         <wsdl:input message="impl:manipulateRequest" name="manipulateRequest"/>
+
+         <wsdl:output message="impl:manipulateResponse" name="manipulateResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ManipulateSoapBinding" type="impl:Manipulate">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="manipulate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="manipulateRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://login.com" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="manipulateResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://login.com" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ManipulateService">
+
+      <wsdl:port binding="impl:ManipulateSoapBinding" name="Manipulate">
+
+         <wsdlsoap:address location="http://localhost:3003/LoginApp/services/Manipulate"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

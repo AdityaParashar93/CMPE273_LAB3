@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://login.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://login.com" xmlns:intf="http://login.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="productsResponse">
+
+      <wsdl:part name="productsReturn" type="xsd:string"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="productsRequest">
+
+      <wsdl:part name="query" type="xsd:string"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Products">
+
+      <wsdl:operation name="products" parameterOrder="query">
+
+         <wsdl:input message="impl:productsRequest" name="productsRequest"/>
+
+         <wsdl:output message="impl:productsResponse" name="productsResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ProductsSoapBinding" type="impl:Products">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="products">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="productsRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://login.com" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="productsResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://login.com" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ProductsService">
+
+      <wsdl:port binding="impl:ProductsSoapBinding" name="Products">
+
+         <wsdlsoap:address location="http://localhost:3003/LoginApp/services/Products"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
